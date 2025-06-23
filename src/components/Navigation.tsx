@@ -12,16 +12,14 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="text-2xl font-bold text-black">Every</div>
-          </Link>
-
-          {/* Desktop Navigation */}
+            <div className="text-2xl font-bold text-black">JobEase</div>
+          </Link>          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/newsletters" className="text-gray-700 hover:text-black transition-colors">
-              Newsletters
-            </Link>
+            <a href="https://legit-frontend-kdtr.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black transition-colors">
+              Jobs
+            </a>
             <Link to="/writers" className="text-gray-700 hover:text-black transition-colors">
-              Writers
+              Blogs
             </Link>
             <Link to="/about" className="text-gray-700 hover:text-black transition-colors">
               About
@@ -44,15 +42,13 @@ const Navigation = () => {
               <Menu className="w-6 h-6" />
             </button>
           </div>
-        </div>
-
-        {/* Mobile menu */}
+        </div>        {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col space-y-4">
-              <Link to="/newsletters" className="text-gray-700 hover:text-black transition-colors">
-                Newsletters
-              </Link>
+              <a href="https://legit-frontend-kdtr.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black transition-colors">
+                Jobs
+              </a>
               <Link to="/writers" className="text-gray-700 hover:text-black transition-colors">
                 Writers
               </Link>
