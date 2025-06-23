@@ -69,7 +69,7 @@ const handleSubscribe = async (e) => {
       if (fallbackResponse.ok) {
         const result = await fallbackResponse.text();
         console.log('Fallback response:', result);
-        setMessage("Successfully subscribed! 🎉");
+        setMessage("Successfully subscribed!");
         setEmail("");
       } else {
         setMessage("Subscription sent! Please check your email list.");
@@ -78,7 +78,7 @@ const handleSubscribe = async (e) => {
       
     } catch (fallbackError) {
       console.error("Fallback also failed:", fallbackError);
-      setMessage("Successfully subscribed! 🎉");
+      setMessage("Successfully subscribed!");
       setEmail("");
     }
   } finally {
